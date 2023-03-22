@@ -1,20 +1,14 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  position: absolute;
+  width: 693px;
+  height: 659px;
+  left: 585px;
+  top: -1px;
+  z-index: 0;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +18,29 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.neuromancer{
+  position: absolute;
+  width: 917px;
+  height: 119px;
+  left: 75px;
+  top: 150px;
+  color: #07DC36;
+  font-size: 80px;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle{
+  position: absolute;
+  width: 672px;
+  height: 112px;
+  left: 75px;
+  top: 285px;
+  z-index: 1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(213, 203, 203, 0.51);
+  border: 1px solid #000000;
 }
