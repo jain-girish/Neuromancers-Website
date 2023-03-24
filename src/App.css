@@ -1,13 +1,4 @@
-.App-logo {
-  position: absolute;
-  width: 693px;
-  height: 659px;
-  left: 585px;
-  top: -1px;
-  z-index: 0;
-}
-
-.App-header {
+/* .App-header {
   background-color: #000000;
   min-height: 100vh;
   display: flex;
@@ -16,31 +7,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.neuromancer{
-  position: absolute;
-  width: 917px;
-  height: 119px;
-  left: 75px;
-  top: 150px;
-  color: #07DC36;
-  font-size: 80px;
-  z-index: 1;
-}
-
-.subtitle{
-  position: absolute;
-  width: 672px;
-  height: 112px;
-  left: 75px;
-  top: 285px;
-  z-index: 1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 30px;
-  color: rgba(213, 203, 203, 0.51);
-  border: 1px solid #000000;
+.App{
+  background-color: black;
 }

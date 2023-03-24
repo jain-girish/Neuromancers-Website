@@ -1,0 +1,66 @@
+nav{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  padding: 0px 60px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  width: 100vw;
+  height: 8kvh;
+  z-index: 1;
+  /* border: 10px solid #07DC36; */
+}
+
+#instiLogo{
+  flex-grow: 1;
+  left: 1%;
+  height: auto;
+  width: 0.7vw;
+}
+
+#navbar{
+  flex-grow: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navbar ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #38ffa2;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #8dff8e5b;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #8dff8e5b;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}

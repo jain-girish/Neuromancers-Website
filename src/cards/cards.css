@@ -1,0 +1,119 @@
+.card {
+  display: grid;
+  width: 70vw;
+  height: 70vh;
+  /* grid-template-columns: 70vw;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats"; */
+
+  /* border-radius: 18px; */
+  background: black;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.card-image {
+  height: 70vh;
+  width: auto;
+  /* border-radius: 18px; */
+}
+
+.card-text {
+  transform: translateZ(30px);
+  position: absolute;
+  bottom:0;
+  right: 0;
+  width: 40%;
+  height: 40%;
+  border: 10px solid #07DC36;
+}
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+  position: absolute;
+  bottom: 90%;
+  right: 50%;
+}
+
+.card-text h2 {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  margin-top:0px;
+  font-size:28px;
+  font-family: "Exo 2", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card-text p {
+  color: #fff;
+  position: absolute;
+  bottom: 1%;
+  right: 0.1%;
+  font-size:15px;
+  font-weight: 300;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.description::before{
+  content: 'And get a chance to win tickets to the premiere of the movie.';
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  width:0;
+  height:100%;
+  color: #07DC36;
+  overflow: hidden;
+  transition: width 1s;
+}
+
+.card:hover .description:before{
+  width: 100%;
+}
+
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+  padding:10px;
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+  padding:10px;
+}
+
+/* .card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+} */

@@ -1,0 +1,156 @@
+.home{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width:100%;
+  /* top: 0vw;
+  left: 0vw;
+  right: 0vw;
+  bottom: 0vw; */
+  /* border: 10px solid #07DC36; */
+  overflow:hidden;
+}
+
+#myVideo {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  right: 0;
+  /* bottom: 0; */
+  /* min-width: 100%;
+  min-height: 100%; */
+}
+  
+.content{
+  position: absolute;
+  top:40vh;
+  left: 1vw;
+  width: 50vw;
+  height: 40vh;
+  /* border: 1px solid #0 7DC36; */
+}
+
+#neuroLogo {
+  animation: 5s anim-lineUp ease-out;
+  position: absolute;
+  left: 1%;
+  top: 0;
+  width: 7vw;
+  height: auto;
+}
+  
+.neuromancer{
+  animation: 2s anim-lineUp ease-out;
+  position: absolute;
+  /* width: 100%;
+  height: 60%; */
+  left: 1%;
+  top: 1%;
+  color: #07DC36;
+  font-family: 'Righteous', cursive;
+  font-size: 80px;
+}
+  
+.subtitle{
+  animation: 2s anim-lineDown ease-out;
+  position: absolute;
+  /* width: 672px;
+  height: 112px; */
+  left: 1%;
+  top: 43%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(213, 203, 203, 0.51);
+}
+ 
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+  
+@keyframes anim-lineDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* https://www.youtube.com/watch?v=L0zhR1sSm58 */
+
+/* .line{
+    position: absolute;
+    left: 5px;
+    top: 340px;
+    width: 650px;
+    height: 4px;
+    background: #07DC36;
+}
+
+.line::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    animation: 2s animateLine 2s linear;
+}
+
+@keyframes animateLine{
+    0%,20%{
+        background: #07DC36;
+        transform: scaleX(0);
+    }
+    40%{
+        background: #07DC36;
+        transform: scaleY(1);
+        transform-origin: left;
+    }
+}
+
+.line::after{
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #07DC36;
+    border-radius: 50%;
+    animation: animateDot 2s linear;
+}
+
+@keyframes animateDot {
+    0%{
+        transform: translateY(-50%) scale(0);
+    }
+    5%{
+        transform: translateY(-50%) scale(0);
+    }
+
+} */
